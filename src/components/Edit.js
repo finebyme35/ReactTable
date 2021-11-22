@@ -10,7 +10,15 @@ function Edit({edit}) {
     const[name, setName] = useState(edit.name)
     const[userName, setUserName] = useState(edit.username)
     const[email, setEmail] = useState(edit.email)
-    const handleChange = (e) => {
+    const [editUsers, setEditUsers] = useState([])
+    const handleChange = (e,name, userName, email) => {
+        const editUser = {
+            name: name,
+            userName: userName,
+            email: email
+        }
+        setEditUsers(editUser)
+        console.log(editUsers);
        
     }
         
@@ -46,7 +54,7 @@ function Edit({edit}) {
                         onChange={(e) => setEmail(e.target.value)}>
                         </Input>
                         <div className="form-btn-submit">
-                            <button type="submit" className="form-btn">Submit</button>
+                            <button type="submit" className="form-btn-group"><Link to='/' className="form-btn">Submit</Link></button>
                         </div>
                         
                     </div>
