@@ -154,7 +154,7 @@ code {
   border: none;
   padding: 1rem;
   margin: 1rem;
-  background-color: 	#ffd700;
+  background-color: 	#A9A9A9;
   box-shadow: 0.1rem 0.1rem 0.01rem 0.01rem 	#d2b48c;
   
 }
@@ -162,7 +162,7 @@ code {
 
 .form-btn-group:hover{
   cursor: pointer;
-  background-color: 	#dc143c;
+  background-color: 	red;
 }
 
 .form-title{
