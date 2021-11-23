@@ -6,20 +6,19 @@ import Input from "./Input";
 
 
 
-function Edit({edit}) {
+function Edit({edit, user, setUser}) {
     const[name, setName] = useState(edit.name)
     const[userName, setUserName] = useState(edit.username)
     const[email, setEmail] = useState(edit.email)
-    const [editUsers, setEditUsers] = useState([])
-    const handleChange = (e,name, userName, email) => {
+    const handleChange = (e) => {
         const editUser = {
             name: name,
             userName: userName,
             email: email
         }
-        setEditUsers(editUser)
-        console.log(editUsers);
-       
+        setUser([...user, editUser])
+        console.log(editUser);
+        
     }
         
         return(

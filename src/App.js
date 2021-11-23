@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Table user={user} editUser={editUser} deleteUser={deleteUser}
           />}></Route>
-        <Route path='/edit' element={<Edit edit={edit}/>}></Route>
+        <Route path='/edit' element={<Edit edit={edit} user={user} setUser={setUser}/>}></Route>
 
       </Routes>
     </div>
